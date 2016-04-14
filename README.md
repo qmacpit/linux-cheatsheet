@@ -13,3 +13,9 @@ netstat -anp | grep 8002
 ```
 find ./ -name filename
 ```
+
+###network
+- track incomming HTTP traffic(works only for traffic from outside of localhost)
+```
+sudo tcpdump -s 0 -A -i en1 "tcp port $PORT and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)"
+```
