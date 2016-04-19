@@ -14,6 +14,11 @@ netstat -anp | grep 8002
 find ./ -name filename
 ```
 
+###find in files
+```
+grep -rnw <dir> -e "<pattern>"
+```
+
 ###network
 - track incomming HTTP traffic(works only for traffic from outside of localhost)
 ```
