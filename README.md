@@ -19,6 +19,12 @@ find ./ -name filename
 grep -rnw <dir> -e "<pattern>"
 ```
 
+###archiving
+- tar.gz with progress
+```
+tar -zcvf - <source> | pv > <destination.tar.gz>
+```
+
 ###network
 - track incomming HTTP traffic(works only for traffic from outside of localhost)
 ```
