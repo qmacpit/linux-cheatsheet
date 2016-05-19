@@ -24,6 +24,10 @@ grep -rnw <dir> -e "<pattern>"
 ```
 tar -zcvf - <source> | pv > <destination.tar.gz>
 ```
+- untar
+```
+tar -xvf yourfile.tar
+```
 
 ###network
 - track incomming HTTP traffic(works only for traffic from outside of localhost)
