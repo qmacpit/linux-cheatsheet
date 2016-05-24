@@ -8,6 +8,9 @@
 ```
 netstat -anp | grep 8002
 ```
+```
+netstat -nlp
+```
 
 ###find file by name
 ```
