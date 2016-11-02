@@ -37,3 +37,9 @@ tar -xvf yourfile.tar
 ```
 sudo tcpdump -s 0 -A -i en1 "tcp port $PORT and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)"
 ```
+###sed
+- replace version in package.json
+```
+sed -i 's/"version": "0.0.5",/"version": "0.0.0",/' package.json  
+sed -i 's/"version": "\(.\).\(.\).\(.\)",/"version": "0.0.0",/' package.json
+```
