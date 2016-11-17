@@ -43,3 +43,8 @@ sudo tcpdump -s 0 -A -i en1 "tcp port $PORT and (((ip[2:2] - ((ip[0]&0xf)<<2)) -
 sed -i 's/"version": "0.0.5",/"version": "0.0.0",/' package.json  
 sed -i 's/"version": "\(.\).\(.\).\(.\)",/"version": "0.0.0",/' package.json
 ```
+###
+- install tar ball
+```
+sudo tar -xJf node-v6.9.1-linux-x64.tar.xz -C /usr/local/ --strip-components=1
+```
