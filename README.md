@@ -44,7 +44,7 @@ sed -i 's/"version": "0.0.5",/"version": "0.0.0",/' package.json
 sed -i 's/"version": "\(.\).\(.\).\(.\)",/"version": "0.0.0",/' package.json
 ```
 ###
-- install tar ball
+- install tarball
 ```
 sudo tar -xJf node-v6.9.1-linux-x64.tar.xz -C /usr/local/ --strip-components=1
 ```
